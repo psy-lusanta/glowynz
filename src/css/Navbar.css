@@ -1,0 +1,20 @@
+nav {
+    z-index: auto;
+}
+
+nav h5, li {
+    font-family: Vollkorn, sans-serif;
+}
+
+.logo {
+    width: 40px;
+}
+
+
+@media(max-width: 991px) {
+    .sidebar {
+        background-color: #ffd0a256;
+        backdrop-filter: blur(10px);
+    }
+
+}

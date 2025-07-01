@@ -1,0 +1,1109 @@
+/* --DESKTOP-- */
+@media (min-width: 1440px) and (min-width: 1025px) {
+    .home {
+        min-height: 100vh;
+        background-color: #FFF7EB;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .homepage-container {
+        display: flex;
+        flex: 1;
+        justify-content: space-between;
+        background: linear-gradient(#ffe9c9, #FEFCF9);
+        box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .homepage-picture-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 30px;
+    }
+
+    .homepage-picture {
+        animation: opacity;
+        max-inline-size: 100%;
+    }
+
+    .homepage-text-button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+        margin: auto;
+        /* centers horizontally in its flex parent */
+    }
+
+    .homepage-text {
+        font-size: 5em;
+        color: #000000;
+    }
+
+    .homepage-button {
+        background-color: #FFD0A2;
+        border: none;
+        color: #000000;
+        padding: 6px 30px;
+        border-radius: 12px;
+        font-size: 2em;
+        cursor: pointer;
+        margin-top: 10px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .homepage-button:hover {
+        background-color: #FFB07A;
+        color: #FFFFFF;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .homepage-button:active {
+        scale: 0.95;
+        transition: all 0.1s ease-in-out;
+    }
+
+    /*---SERVICES---*/
+    .services {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #FFF7EB;
+    }
+
+
+    .services-h1-container {
+        text-align: center;
+    }
+
+    .services-pictures-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .services-picture {
+        overflow: hidden;
+        border-radius: 20px;
+    }
+
+    .services-img {
+        max-inline-size: 100%;
+        cursor: pointer;
+        object-fit: cover;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .services-img:hover {
+        transform: scale(1.05);
+    }
+
+    /*---ABOUT US---*/
+    .about {
+        display: flex;
+        justify-content: center;
+        min-height: 100vh;
+        background-color: #FFF7EB;
+    }
+
+    .about-h1-container {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .about-body-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .about-picture-container {
+        padding: 0 20px;
+        margin-bottom: 10px;
+    }
+
+    .about-picture {
+        max-inline-size: 100%;
+        border-radius: 10px;
+    }
+
+    .about-container .h1-galleria {
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .about-pictures {
+        display: grid;
+        gap: 10px;
+        margin: 0px 20px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .about-text-container {
+        padding: 0 20px;
+    }
+
+    .about-text {
+        text-align: center;
+    }
+
+    .about-manicure-div,
+    .about-nail-services-div,
+    .tita-div,
+    .love-div {
+        position: relative;
+    }
+
+    .manicure {
+        position: absolute;
+        top: 50px;
+        right: 50%;
+        transform: translateX(50%);
+        color: white;
+        font-weight: bold;
+        font-size: clamp(1rem, 2vw, 1.5rem);
+        max-width: 60vw;
+        width: 100%;
+        text-align: center;
+        word-break: break-word;
+        line-height: 1.2;
+    }
+
+    .nails {
+        position: absolute;
+        top: 50px;
+        color: white;
+        font-weight: bold;
+        font-size: clamp(1rem, 2vw, 1.5rem);
+        max-width: 60vw;
+        width: 100%;
+        text-align: center;
+        word-break: break-word;
+        line-height: 1.2;
+    }
+
+    .crush,
+    .tita-text {
+        position: absolute;
+        top: 50px;
+        right: 50%;
+        transform: translateX(50%);
+        color: white;
+        font-weight: bold;
+        font-size: clamp(1rem, 2vw, 1.5rem);
+        max-width: 60vw;
+        width: 100%;
+        text-align: center;
+        word-break: break-word;
+        line-height: 1.2;
+    }
+
+    .about-pictures img {
+        max-inline-size: 100%;
+        border-radius: 10px;
+    }
+
+    .about-map {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 3.5em;
+        margin-bottom: 3.5em;
+        flex-wrap: wrap;
+    }
+
+    .about-manicure-pic,
+    .about-manicure-hands,
+    .about-nail-services {
+        animation: appear-right both;
+        animation-timeline: view();
+        animation-range: entry 20% cover 100vh;
+    }
+
+    @keyframes appear-right {
+        from {
+            opacity: 0;
+            transform: translateX(100px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    .tita-bulen,
+    .POV-pic,
+    .love-img {
+        animation: appear-left both;
+        animation-timeline: view();
+        animation-range: entry 20% cover 100vh;
+    }
+
+    @keyframes appear-left {
+        from {
+            opacity: 0;
+            transform: translateX(-100px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+    }
+
+    iframe {
+        display: block;
+        width: 100%;
+        height: 20em;
+        max-inline-size: 100%;
+        border-radius: 10px;
+    }
+
+    .map-location-text {
+        font-size: 1.2em;
+        color: #000000;
+        margin-top: 10px;
+    }
+
+    /*----FOOTER----*/
+
+    .footer-container {
+        margin-top: 10px;
+    }
+
+    .footer-logo-text {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .footer-logo-img {
+        width: 40px;
+    }
+
+    .testing {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .follow-contact-div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-online,
+    .footer-contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .online-icons {
+        display: flex;
+        gap: 10px;
+    }
+
+    .online-icons img {
+        border: 1px solid black;
+        padding: 5px;
+        border-radius: 5px;
+    }
+
+    .footer-contact-info {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .footer-number p,
+    .footer-email p {
+        margin: 0;
+    }
+
+    .footer-number,
+    .footer-email {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .footer-form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer-h2 {
+        text-align: center;
+    }
+
+    .footer-form-inputs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-form-inputs input {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        background-color: white;
+    }
+
+    .footer-button-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .footer-button {
+        background-color: #FFD0A2;
+        color: gray;
+        border-radius: 10px;
+        border: none;
+        padding: 5px 15px;
+        box-shadow: #525252 2px 2px 5px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .footer-button:active {
+        scale: 0.95;
+        transition: all 0.1s ease-in-out;
+    }
+
+    .footer-bottom {
+        text-align: center;
+        border-top: 1px solid black;
+    }
+
+
+}
+
+/*----TABLET----*/
+@media (max-width: 1024px) and (min-width: 426px) {
+    .home {
+        min-height: 100vh;
+        background-color: #FFF7EB;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .homepage-container {
+        display: flex;
+        flex: 1;
+        gap: 20px;
+        background: linear-gradient(#ffe9c9, #FEFCF9);
+        font-family: Vollkorn, sans-serif;
+        box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .homepage-picture-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+    }
+
+    .homepage-picture {
+        max-inline-size: 100%;
+    }
+
+    .homepage-text-button {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        padding: 0px 20px;
+    }
+
+    .homepage-text {
+        font-size: 2.5em;
+        color: #000000;
+    }
+
+    .homepage-button {
+        background-color: #FFD0A2;
+        border: none;
+        color: #000000;
+        padding: 6px 30px;
+        border-radius: 10px;
+        font-size: 1.2em;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .homepage-button:hover {
+        background-color: #FFB07A;
+        color: #FFFFFF;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .homepage-button:active {
+        scale: 0.95;
+        transition: all 0.1s ease-in-out;
+    }
+
+    /*---SERVICES---*/
+    .services {
+        min-height: 100vh;
+        background-color: #FFF7EB;
+    }
+
+    .services-h1-container {
+        text-align: center;
+    }
+
+    .services-pictures-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .services-pictures-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .services-picture {
+        overflow: hidden;
+        border-radius: 20px;
+    }
+
+    .services-img {
+        max-inline-size: 100%;
+        cursor: pointer;
+        object-fit: cover;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .services-img:hover {
+        transform: scale(1.05);
+    }
+
+    /*---ABOUT US---*/
+    .about {
+        min-height: 100vh;
+        background-color: #FFF7EB;
+    }
+
+    .about-h1-container {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .about-picture-container {
+        padding: 0 20px;
+        margin-bottom: 10px;
+    }
+
+    .about-picture {
+        max-inline-size: 100%;
+        border-radius: 10px;
+    }
+
+    .about-container .h1-galleria {
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .about-pictures {
+        display: grid;
+        gap: 10px;
+        margin: 0px 20px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-text-container {
+        padding: 0 20px;
+    }
+
+    .about-text {
+        text-align: center;
+    }
+
+    .about-manicure-div,
+    .about-nail-services-div,
+    .tita-div,
+    .love-div {
+        position: relative;
+    }
+
+    .manicure {
+        position: absolute;
+        top: 50px;
+        right: 50%;
+        transform: translateX(50%);
+        color: white;
+        font-weight: bold;
+        font-size: clamp(1rem, 2vw, 1.5rem);
+        max-width: 60vw;
+        width: 100%;
+        text-align: center;
+        word-break: break-word;
+        line-height: 1.2;
+    }
+
+    .nails {
+        position: absolute;
+        top: 50px;
+        color: white;
+        font-weight: bold;
+        font-size: clamp(1rem, 2vw, 1.5rem);
+        max-width: 60vw;
+        width: 100%;
+        text-align: center;
+        word-break: break-word;
+        line-height: 1.2;
+    }
+
+    .crush,
+    .tita-text {
+        position: absolute;
+        top: 50px;
+        right: 50%;
+        transform: translateX(50%);
+        color: white;
+        font-weight: bold;
+        font-size: clamp(1rem, 2vw, 1.5rem);
+        max-width: 60vw;
+        width: 100%;
+        text-align: center;
+        word-break: break-word;
+        line-height: 1.2;
+    }
+
+    .about-pictures img {
+        max-inline-size: 100%;
+        border-radius: 10px;
+    }
+
+    .about-map {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 3.5em;
+        flex-wrap: wrap;
+    }
+
+    .galleria {
+        animation: appear both;
+        animation-timeline: view();
+        animation-range: entry 20% cover 100vh;
+    }
+
+    @keyframes appear {
+        from {
+            opacity: 0;
+            transform: translateY(100px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+    }
+
+    iframe {
+        display: block;
+        width: 100%;
+        height: 300px;
+        max-inline-size: 100%;
+        border-radius: 10px;
+    }
+
+    .map-location-text {
+        font-size: 1.2em;
+        color: #000000;
+        margin-top: 10px;
+    }
+
+    /*----FOOTER----*/
+
+    .footer-container {
+        margin-top: 10px;
+    }
+
+    .footer-logo-text {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .footer-logo-img {
+        width: 40px;
+    }
+
+    .testing {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .follow-contact-div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-online,
+    .footer-contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .online-icons {
+        display: flex;
+        gap: 10px;
+    }
+
+    .online-icons img {
+        border: 1px solid black;
+        padding: 5px;
+        border-radius: 5px;
+    }
+
+    .footer-contact-info {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .footer-number p,
+    .footer-email p {
+        margin: 0;
+    }
+
+    .footer-number,
+    .footer-email {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .footer-form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer-h2 {
+        text-align: center;
+    }
+
+    .footer-form-inputs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-form-inputs input {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        background-color: white;
+    }
+
+    .footer-button-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .footer-button {
+        background-color: #FFD0A2;
+        color: gray;
+        border-radius: 10px;
+        border: none;
+        padding: 5px 15px;
+        box-shadow: #525252 2px 2px 5px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .footer-button:active {
+        scale: 0.95;
+        transition: all 0.1s ease-in-out;
+    }
+
+    .footer-bottom {
+        text-align: center;
+        border-top: 1px solid black;
+    }
+
+}
+
+/*----PHONE----*/
+@media (max-width: 425px) {
+    .home {
+        min-height: 100vh;
+        margin-top: 60px;
+        background-color: #FFF7EB;
+    }
+
+    .homepage-container {
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(#FEFCF9, #FFF7EB);
+        padding-bottom: 10px;
+        font-family: Vollkorn, sans-serif;
+    }
+
+    .homepage-picture-container {
+        margin-bottom: 50px;
+        padding-top: 30px;
+    }
+
+    .homepage-picture {
+        max-inline-size: 100%;
+    }
+
+    .homepage-text-button {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .homepage-button {
+        background-color: #FFD0A2;
+        border: none;
+        color: #000000;
+        padding: 5px 30px;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 1.2vw;
+        transition: all 0.3s ease-in-out;
+        font-size: 20px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .homepage-button:hover {
+        background-color: #FFB07A;
+        color: #FFFFFF;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .homepage-button:active {
+        scale: 0.95;
+        transition: all 0.1s ease-in-out;
+    }
+
+    /*---SERVICES---*/
+    .services {
+        min-height: 100vh;
+        background-color: #FFF7EB;
+    }
+
+    .services-h1-container {
+        text-align: center;
+    }
+
+    .services-picture-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .services-pictures-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .services-picture {
+        overflow: hidden;
+        border-radius: 20px;
+    }
+
+    .services-img {
+        max-inline-size: 100%;
+        cursor: pointer;
+        object-fit: cover;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .services-img:hover {
+        transform: scale(1.05);
+    }
+
+    /*---ABOUT US---*/
+
+    .about {
+        min-height: 100vh;
+        background-color: #FFF7EB;
+    }
+
+    .about-h1-container {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .about-body {
+        display: grid;
+    }
+
+    .about-picture-container {
+        padding: 0 20px;
+        margin-bottom: 10px;
+    }
+
+    .about-container .h1-galleria {
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .about-picture {
+        max-inline-size: 100%;
+        border-radius: 10px;
+    }
+
+    .about-text-container {
+        padding: 0 20px;
+    }
+
+    .about-text {
+        text-align: center;
+    }
+
+    .about-manicure-div,
+    .manicure-hands-div,
+    .about-nail-services-div,
+    .tita-div,
+    .POV-div,
+    .love-div {
+        padding: 10px 20px;
+        position: relative;
+    }
+
+    .manicure {
+        position: absolute;
+        top: 50px;
+        right: 50%;
+        transform: translateX(30%);
+        color: white;
+        font-weight: bold;
+        font-size: clamp(1rem, 2vw, 1.5rem);
+        max-width: 60vw;
+        width: 100%;
+        text-align: center;
+        word-break: break-word;
+        line-height: 1.2;
+    }
+
+    .nails {
+        position: absolute;
+        top: 50px;
+        transform: translateX(50%);
+        color: white;
+        font-weight: bold;
+        font-size: clamp(1rem, 2vw, 1.5rem);
+        max-width: 60vw;
+        width: 100%;
+        text-align: center;
+        word-break: break-word;
+        line-height: 1.2;
+    }
+
+    .crush,
+    .tita-text {
+        position: absolute;
+        top: 50px;
+        right: 50%;
+        transform: translateX(50%);
+        color: white;
+        font-weight: bold;
+        font-size: clamp(1rem, 2vw, 1.5rem);
+        max-width: 60vw;
+        width: 100%;
+        text-align: center;
+        word-break: break-word;
+        line-height: 1.2;
+    }
+
+    .about-pictures img {
+        max-inline-size: 100%;
+        border-radius: 10px;
+    }
+
+    .galleria {
+        animation: appear both;
+        animation-timeline: view();
+        animation-range: entry 20% cover 100vh;
+    }
+
+    @keyframes appear {
+        from {
+            opacity: 0;
+            transform: translateY(100px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+    }
+
+    .about-map {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+    iframe {
+        display: block;
+        width: 100%;
+        height: 300px;
+        max-inline-size: 100%;
+        border-radius: 10px;
+    }
+
+    /*----FOOTER----*/
+
+    .footer-container {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .footer-logo-text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-logo-img {
+        width: 40px;
+    }
+
+    .follow-contact-div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-online,
+    .footer-contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .online-icons {
+        display: flex;
+        gap: 10px;
+    }
+
+    .online-icons img {
+        border: 1px solid black;
+        padding: 5px;
+        border-radius: 5px;
+    }
+
+    .footer-contact-info {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .footer-number p,
+    .footer-email p {
+        margin: 0;
+    }
+
+    .footer-number,
+    .footer-email {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .footer-form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer-h2 {
+        text-align: center;
+    }
+
+    .footer-form-inputs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-form-inputs input {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        background-color: white;
+    }
+
+    .footer-button-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .footer-button {
+        background-color: #FFD0A2;
+        color: gray;
+        border-radius: 10px;
+        border: none;
+        padding: 5px 15px;
+        box-shadow: #525252 2px 2px 5px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .footer-button:active {
+        scale: 0.95;
+        transition: all 0.1s ease-in-out;
+    }
+
+    .footer-bottom {
+        text-align: center;
+        border-top: 1px solid black;
+    }
+}
